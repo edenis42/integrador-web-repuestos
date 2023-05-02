@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        thead, tr, th, td {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Tablas</h1>
+
+    <h2>Tabla con colspan</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2"> Nombre Completo </th>
+                <!-- <th> Apellido </th> -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td> Eduardo </td>
+                <td> Denis </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+        </tbody>
+    </table>
+
+    <h2>Tabla con rowspan</h2>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <b>Nombre</b>
+                </td>
+                <td>Eduardo</td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    <b>Telefonos de contacto</b> 
+                </td>
+                <td> 11222333</td>
+            </tr>
+            <tr>
+                <td> 44555666</td>
+            </tr>
+            <tr>
+                <td> 77888999</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+</body>
+</html>
