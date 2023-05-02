@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <form name="formulario-autos" method="get" action="" enctype="multipart/form-data">
+        <input type="hidden" name="dni" value="11222333">
+
+        <label for="firstname">Primer nombre:</label>
+        <input name="firstname" type="text" placeholder="Ingrese su nombre" value="Eduardo" disabled>
+        <br>
+        <label for="firstname">Contraseña:</label>
+        <input name="password" type="password" placeholder="Ingrese su contraseña" required>
+        <br>
+        <label for="acuerdo">Esta de acuerdo con los terminos?</label>
+        <input type="checkbox" name="acuerdo">
+        <br>
+
+        <label for="gender">Genero</label>
+        <br>
+        <label>Masculino: </label>
+        <input name="gender" type="radio" value="M">
+        <label> Femenino: </label>
+        <input name="gender" type="radio" value="F">
+        <label> No Binario: </label>
+        <input name="gender" type="radio" value="NB" checked>
+        <label> Otros: </label>
+        <input name="gender" type="radio" value="O">
+        <br>
+
+        <label for="archivo"> Archivo: </label>
+        <input type="file" name="archivo" multiple>
+        <br>
+
+        <label> Reset: </label>
+        <input type="reset">
+        <br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
