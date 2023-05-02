@@ -12,34 +12,80 @@
     <form name="formulario-autos" method="get" action="" enctype="multipart/form-data">
         <input type="hidden" name="dni" value="11222333">
 
-        <label for="firstname">Primer nombre:</label>
-        <input name="firstname" type="text" placeholder="Ingrese su nombre" value="Eduardo" disabled>
-        <br>
-        <label for="firstname">Contraseña:</label>
-        <input name="password" type="password" placeholder="Ingrese su contraseña" required>
-        <br>
-        <label for="acuerdo">Esta de acuerdo con los terminos?</label>
-        <input type="checkbox" name="acuerdo">
-        <br>
-
-        <label for="gender">Genero</label>
-        <br>
-        <label>Masculino: </label>
-        <input name="gender" type="radio" value="M">
-        <label> Femenino: </label>
-        <input name="gender" type="radio" value="F">
-        <label> No Binario: </label>
-        <input name="gender" type="radio" value="NB" checked>
-        <label> Otros: </label>
-        <input name="gender" type="radio" value="O">
+        <fieldset>
+            <legend> Primer Fielset </legend>
+            <label for="firstname">Primer nombre:</label>
+            <input name="firstname" type="text" placeholder="Ingrese su nombre" value="Eduardo" disabled>
+            <br>
+            <label for="firstname">Contraseña:</label>
+            <input name="password" type="password" placeholder="Ingrese su contraseña" required>
+            <br>
+            <label for="acuerdo">Esta de acuerdo con los terminos?</label>
+            <input type="checkbox" name="acuerdo">
+        </fieldset>
+        
         <br>
 
-        <label for="archivo"> Archivo: </label>
-        <input type="file" name="archivo" multiple>
+        <fieldset>
+            <legend> Genero </legend>
+            <label for="gender">Genero</label>
+            <br>
+            <label>Masculino: </label>
+            <input name="gender" type="radio" value="M">
+            <label> Femenino: </label>
+            <input name="gender" type="radio" value="F">
+            <label> No Binario: </label>
+            <input name="gender" type="radio" value="NB" checked>
+            <label> Otros: </label>
+            <input name="gender" type="radio" value="O">
+        </fieldset>
+
         <br>
 
-        <label> Reset: </label>
-        <input type="reset">
+        <fieldset>
+            <legend> Otros </legend>
+            <label for="archivo"> Archivo: </label>
+            <input type="file" name="archivo" multiple>
+            <br>
+
+            <label for="email"> Email: </label>
+            <input type="email" name="email">
+            <br>
+
+            <label> Reset: </label>
+            <input type="reset">
+            <br>
+
+            <label for="descripcion"> Texarea: </label>
+            <textarea name="descripcion" cols="30" rows="10"></textarea>
+            <br>
+
+            <label for="marcas"> Marca de Auto: </label>
+            <select name="marcas">
+                <option value="toyt">Toyota</option>
+                <option value="ford" selected>Ford</option>
+                <option value="chev">Chevrolet</option>
+            </select>
+
+            <label for="modelo"> Modelo: </label>
+            <select name="modelo">
+                <optgroup label="Toyota">
+                    <option value="etios"> Etios </option>
+                    <option value="Corolla"> Corolla </option>
+                </optgroup>
+
+                <optgroup label="Ford">
+                    <option value="ka"> Ka </option>
+                    <option value="focus"> Focus </option>
+                </optgroup>
+
+                <optgroup label="Chevrolet">
+                    <option value="onix" selected> Onix </option>
+                    <option value="prisma"> Prisma </option>
+                </optgroup>
+            </select>
+        </fieldset>
+
         <br>
         
         <input type="submit" value="Enviar">
