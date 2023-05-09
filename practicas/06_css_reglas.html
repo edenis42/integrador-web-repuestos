@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+        }
+
+        #parrafo-especial {
+            color: #ca1616;
+            font-size: 2rem;
+        }
+
+        p {
+            background-color: bisque;
+        }
+
+        .parrafo-azul {
+            color: blue;
+        }
+
+        div p.parrafo-azul {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Titulo principal
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, adipisci dolorem reiciendis, quaerat dignissimos unde vero officiis dolores et quasi velit earum eveniet temporibus delectus molestias ex nesciunt esse nostrum!
+    </p>
+
+    <div>
+        <p> parrafo 1 </p>
+        <p class="parrafo-azul"> parrafo 2 </p>
+    </div>
+
+    <div>
+        <p> parrafo 3 </p>
+        <p class="parrafo-azul"> parrafo 4 </p>
+    </div>
+
+    <div>
+        <p> parrafo 5 </p>
+        <p id="parrafo-especial" class="parrafo-azul"> parrafo 6 </p>
+    </div>
+    
+</body>
+</html>
