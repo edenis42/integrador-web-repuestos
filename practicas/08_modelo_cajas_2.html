@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;400&family=Roboto:ital,wght@0,100;1,100&family=Rubik+Pixels&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b07329e822.js" crossorigin="anonymous"></script>
+
+    <style>
+    
+        * {
+            /* font-family: 'Rubik Pixels', cursive; */
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        body {
+            margin: 10px;
+        }
+
+        .container {
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            padding: 50px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .segunda-clase {
+            /* display: none; */
+            visibility: hidden;
+        }
+
+        table, tr, td, th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            display: table;
+        }
+
+        #th-1 {
+            background-color: red;
+        }
+
+        #th-2 {
+            background-color: blue;
+        }
+
+        #th-3 {
+            background-color: yellow;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        p {
+            line-height: 25px;
+            text-decoration-line: line-through;
+            text-decoration-style: wavy;
+            text-decoration: wavy red line-through;
+            vertical-align: middle;
+        }
+
+        a {
+            text-decoration-line: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <a href="www.google.com">
+        Google!
+    </a>
+
+    <table>
+        <thead>
+            <tr>
+                <th id="th-1"> Columna 1 </th>
+                <th id="th-2"> Columna 2 </th>
+                <th id="th-3"> Columna 3 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Dato 1
+                </td>
+                <td>
+                    Dato 2
+                </td>
+                <td rowspan="2">
+                    Dato 3
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <a href="https://www.google.com">
+                        <i class="fa-brands fa-facebook fa-beat-fade" style="color: #aeb5c1;"></i>
+                    </a>
+                    </td>
+                <td>
+                    Dato 2
+                </td>
+                <!-- 
+                <td rowspan="2">
+                    Dato 3
+                </td> 
+                -->
+            </tr>
+            <tr>
+                <td>
+                    Dato 1
+                </td>
+                <td>
+                    Dato 2
+                </td>
+                <td rowspan="2">
+                    Dato 3
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dato 1
+                </td>
+                <td>
+                    Dato 2
+                </td>
+                <!-- <td>
+                    Dato 3
+                </td> -->
+            </tr>
+        </tbody>
+    </table>
+
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor, sit <span> HOLA </span> consectetur adipisicing elit. Itaque culpa laboriosam minus nesciunt necessitatibus commodi ipsam numquam iusto a dolor. Facilis autem veritatis excepturi suscipit cupiditate inventore vel facere magni!
+        </p>
+    </div>
+    <div class="container">
+    </div>
+    <div class="container segunda-clase">
+    </div>
+    <div class="container">
+    </div>
+</body>
+</html>
