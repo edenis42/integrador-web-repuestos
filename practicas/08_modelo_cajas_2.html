@@ -7,15 +7,17 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;400&family=Roboto:ital,wght@0,100;1,100&family=Rubik+Pixels&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Smokum&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b07329e822.js" crossorigin="anonymous"></script>
 
     <style>
     
         * {
-            /* font-family: 'Rubik Pixels', cursive; */
-            font-family: 'Noto Sans JP', sans-serif;
+            /* font-family: 'Noto Sans JP', sans-serif;
+            font-family: 'Open Sans', sans-serif; */
+            font-family: 'Smokum', cursive;
+            font-size: 25px;
         }
 
         body {
@@ -76,9 +78,34 @@
             text-decoration-line: none;
         }
 
+        ul {
+            list-style-type: square;
+            list-style-image: url('./../img/car-solid.svg');
+            list-style-position: inside;
+            list-style: url('./../img/car-solid.svg') outside;
+
+        }
+
+        .parrafo {
+            width: 100px;
+            height: 100px;
+            overflow: auto;
+        }
+
+
     </style>
 </head>
 <body>
+
+    <p class="parrafo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet reiciendis, excepturi quaerat accusantium assumenda fuga quibusdam, itaque voluptate quis repellat veritatis placeat provident, numquam harum illo possimus rem maiores voluptas.
+    </p>
+    
+    <ul>
+        <li> Item 1 </li>
+        <li> Item 2 </li>
+        <li> Item 3 </li>
+    </ul>
 
     <a href="www.google.com">
         Google!
