@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .container-1 {
+            border: 1px solid black;
+            height: calc(50vh - 2px);
+            background-color: rgb(212, 160, 95);
+            position: relative;
+        }
+
+        .container-2 {
+            border: 1px solid black;
+            height: calc(50vh - 2px);
+            background-color: rgb(88, 193, 109);
+            position: relative;
+        }
+
+        #item-1 {
+            background-color: brown;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        #item-2 {
+            background-color: rgb(165, 42, 157);
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            bottom: 50%;
+        }
+
+        #item-3 {
+            background-color: rgb(48, 170, 192);
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 0px;
+            right: 50%;
+            transform: translateX(-50%);
+        }
+
+        #item-4 {
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top:50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #item-0 {
+            background-color: grey;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            opacity: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container-1">
+        <div id="item-1" style="z-index: 2;"> 
+            <a href="www.google.com">DIV 1</a>
+        </div>
+    </div>
+    <div class="container-2">
+        <div id="item-2"> DIV 2 </div>
+        <div id="item-3"> DIV 3 </div>
+    </div>
+    <div id="item-4"> DIV 4 </div>
+</body>
+</html>
