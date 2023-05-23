@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            border: 1px solid black;
+            width: 70%;
+            margin: 20px auto;
+            background-color: antiquewhite;
+            height: 70vh;
+
+            display: grid;
+            /* gap: 20px; */
+            column-gap: 20px;
+            row-gap: 40px;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .container .item {
+            background-color: blueviolet;
+        }
+
+        .container .item2 {
+            background-color: red;
+        }
+
+        .container2 {
+            border: 1px solid black;
+            width: 70%;
+            margin: 20px auto;
+            background-color: antiquewhite;
+            height: 70vh;
+
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .container2 .item {
+            background-color: blueviolet;
+            grid-row: 1 / span 2;
+        }
+
+        .container2 .item2 {
+            background-color: red;
+            grid-column: 2 / 4;
+        }
+
+        .item3 {
+            background-color: yellow;
+        }
+
+        .item4 {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item2"></div>
+        <div class="item"></div>
+        <div class="item2"></div>
+        <div class="item"></div>
+        <div class="item2"></div>
+        <div class="item"></div>
+        <div class="item2"></div>
+    </div>
+
+    <div class="container2">
+        <div class="item"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+    </div>
+    
+</body>
+</html>
