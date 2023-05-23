@@ -24,6 +24,13 @@
 
         }
 
+        footer {
+            background-color: rgb(51, 38, 38);
+            color: aliceblue;
+            padding: 10px 20px 10px 20px;
+            text-align: center;
+        }
+
         input {
             height: 40px;
         }
@@ -64,7 +71,7 @@
             background-attachment: fixed;
         }
 
-        h1 {
+        h1, h2, p {
             text-align: center;
         }
 
@@ -88,6 +95,40 @@
         .card p {
             text-align: center;
             font-weight: bold;
+        }
+
+        #secundaria {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .col-30 {
+            flex-basis: 30%;
+            border-right: 4px dashed black;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .col-70 {
+
+            background-image: url('https://images.unsplash.com/photo-1590787996529-a542c86ca267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            flex-basis: 70%;
+
+            /* display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            align-content: end; */
+            position: relative;
+        }
+
+        .col-70 h2 {
+            position: absolute;
+            bottom: 0px;
+            right: 10px;
         }
 
     </style>
@@ -140,8 +181,21 @@
 
         </div>
     </section>
-    <section id="secundario">
+    <section id="secundaria">
+        <div class="col-30">
+            <h2> Titulo COL 30 </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga, magni eius porro laborum corrupti officia aliquam earum qui. Excepturi suscipit atque beatae esse possimus fugit iure deleniti reprehenderit rerum.
+            </p>
+        </div>
 
+        <div class="col-70">
+            <h2> Tituto COL 70 </h2>
+        </div>
     </section>
+
+    <footer>
+        <span> By Edu @copyright 2023 </span>
+    </footer>
 </body>
 </html>
