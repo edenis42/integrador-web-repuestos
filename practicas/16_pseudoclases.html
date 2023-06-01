@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+
+        .square:hover {
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        li:nth-child(even) {
+            color: brown;
+        }
+
+        li:first-child {
+            font-weight: bold;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        input:disabled {
+            font-weight: bold;
+            background-color: rgb(237, 133, 133);
+        }
+
+        p::before {
+            content: 'Inicio del parrafo ';
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="square">
+    </div>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+
+    <form action="">
+        <input type="text" placeholder="Texto 1" disabled>
+        <input type="text" placeholder="Texto 2">
+        <input type="text" placeholder="Texto 3">
+    </form>
+
+    <p>
+        Hola Mundo
+    </p>
+    
+</body>
+</html>
