@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Diseño la pagina WEB pensando PRIMERAMENTE en una aplicacion de Escritorio */
+            body {
+                background-color: blue;
+            }
+
+            @media screen and (max-width: 768px) {
+                /* tablets */
+                body {
+                    background-color: red;
+                }
+            }
+            
+            @media screen and (max-width: 600px) {
+                /* phones */
+                body {
+                    background-color: green;
+                }
+            }
+
+        /* Diseño la pagina WEB pensando PRIMERAMENTE en una aplicacion de Celular */
+            body {
+                background-color: green;
+            }
+
+            @media screen and (min-width: 600px) {
+                /* tablets */
+                body {
+                    background-color: red;
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                /* notebooks */
+                body {
+                    background-color: blue;
+                }
+            }
+    </style>
+</head>
+<body>
+</body>
+</html>

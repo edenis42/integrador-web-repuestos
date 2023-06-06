@@ -9,7 +9,7 @@
     <style>
         .container {
             display: flex;
-            flex-direction: column;
+            flex-flow: row nowrap;
             border: 1px solid black;
             min-height: 50vh;
             justify-content: center;
@@ -24,7 +24,6 @@
 
         .item img {
             max-width: 100%;
-            display: none;
         }
 
 
@@ -38,17 +37,23 @@
             }
         }
 
-        @media screen and (min-width: 600px) {
-            .item img {
-                display :block;
+
+        @media screen and (max-width: 768px) {
+            /* tablets */
+            .container {
+                flex-direction: column;
             }
         }
 
-        @media screen and (min-width: 768px) {
-            .container {
-                flex-flow: row nowrap;
+        
+        @media screen and (max-width: 600px) {
+            /* phones */
+            .item img {
+                display: none;
             }
         }
+
+
     </style>
 
 </head>
